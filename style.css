@@ -1,0 +1,97 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@font-face {
+    font-family: "Bebas Neue" ;
+    src: url(./fonts/bebasneue-book-webfont.woff) format('woff'), 
+    url(./fonts/bebasneue-book-webfont.woff2) format('woff2');
+}
+
+body {
+    display: flex;
+    background-color: #2B2A30;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 518px;
+    height: 518px;
+    border-radius: 50%;
+    box-shadow: -1px 32px 51px 7px rgba(0,0,0,0.75);
+}
+.ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    stroke: rgb(42, 192, 184);
+}
+.ring.ending{
+    stroke: rgb(218, 65, 85);
+}
+.timer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background: radial-gradient(71.4% 71.4% at 51.7% 28.6%, #3A393F 0%, #17171A 100%);
+    box-shadow: inset 0px 0px 12px 1px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    color: white;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    width: 500px;    
+    z-index: 2;   
+}
+.time {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 196px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+input[type="text"] {
+    border: none;
+    background: none;
+    border-bottom: 1px dashed white ;
+    font-family: 'Bebas Neue';
+    font-size: 196px;
+    color: white;
+    height: 170px;
+    width: 150px;
+    outline: none;
+}
+input[type="text"]:disabled {
+    border-bottom: none ;    
+}
+.start {
+    background: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.5;
+    font-size: 16px;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.start:hover {
+    opacity: 1;
+}
+.settings {
+    background: none;
+    border: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.settings:hover {
+    opacity: 1;
+} 
